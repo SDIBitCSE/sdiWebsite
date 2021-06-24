@@ -1,2 +1,8 @@
 @import './components/navbar';
 @import './components/home';
+@import './components/aboutUs';
+body,html{
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	height: 100%;
+}

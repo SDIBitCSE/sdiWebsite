@@ -1,0 +1,36 @@
+#wT{
+	position: absolute;
+	top: 0;
+	left: 30%;
+	width: 100vw;
+	height: 15vh;
+	z-index: -1;
+
+}
+#wB{
+	position: absolute;
+	bottom: 0;
+	left: -15%;
+	height: 15vh;
+	width: 100vw;
+	z-index: -1;
+}
+
+.gS{
+	height: 40%;
+	width: 40%;
+	z-index: -1;
+}
+
+@media (max-width:768px){
+	#wT{
+		left: 5%;
+		top:-7%;
+		height: 20vh;
+	}
+	#wB{
+		bottom: -3%;
+		left: 5%;
+
+	}
+}

@@ -1,6 +1,7 @@
 .home_svg1{
 position: absolute;
-right: 0px;
+right: 0%;
+top: 0%;
 width: 45%;
 z-index: -1;
 }
@@ -19,6 +20,11 @@ z-index: -1;
 .sdi_home_{
     margin-left: 180px;
     text-align: left;
+    font-weight: 400;
+    h1{
+    font-weight: 400;
+
+    }
 }
 
 .sdi_image{
@@ -30,11 +36,29 @@ z-index: -1;
 
 @media (max-width:768px){
     .sdi_home_ div{
-        margin-top: 200px;
-        margin-bottom: 10px;
         font-size: 96px;
     }
     .sdi_home_{
-        margin-left: 80px;
+        position: absolute;
+        top:12%;
+        margin: 0;
+        left: 5%;
+        h1{
+            position: relative;
+            left: 10%;
+        }
+        button{
+            position: relative;
+            left: 10%;
+        }
+    }
+    .sdi_image{
+        top:30%;
+        left: 70%;
+        width: 60%;
+    }
+    .home_svg1{
+        top: -20%;
+        height: 90%;
     }
 }
