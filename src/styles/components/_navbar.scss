@@ -3,12 +3,12 @@
     max-width: 100%;
 }
 
-.sdi_navbar img{
+.sdi_navbar_img img{
     width: 140px;
     height: 80px;
     position: relative;
     top: 0px;
-    left: 0px;      
+    left: 0px;
 }
 
 .sdi_name{
@@ -20,8 +20,8 @@
     display: block;
     color: #666;
     text-decoration: none;
-    text-align: center;
-    margin: 30px 2.5%;
+    text-align: left;
+    margin: 15px 2.5%;
     font-size: 20px;
     font-family: monospace;
 }
@@ -58,13 +58,7 @@
 @media (max-width:768px){
     .sdi_navbar1{
         display: none;
-
-    }
-    .sdi_navbar{
-        border-radius: 2em ;
-        padding-bottom: 2%;
-        transition: all ease-in 450ms;
-        
+        margin-right: 4%;
     }
     .sdi_bar{
         display: block;
@@ -72,12 +66,27 @@
     }
     .sdi_navbar2{
         position: relative;
-        background: #b2fff7d3;
+    }
+    .sdi_bar{
+        position: absolute;
+        right: 0;
+        top: 0;
     }
     .sdi_navbar2 .sdi_navbar1{
         float: none;
         display: block;
-        text-align: left;
+        text-align: right;
+    }
+    #sdi_nav_last{
+        margin-right: 4%;
     }
 }
 
+@media only screen and (max-width: 480px) {
+    #sdi_nav_last{
+        margin-right: 8%;
+    }
+    .sdi_navbar1{
+        margin-right: 8%;
+    }
+}

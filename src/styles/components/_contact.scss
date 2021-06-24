@@ -1,0 +1,94 @@
+#sdi_contact_above {
+    position: absolute;
+    top: 100%;
+    z-index: -1;
+}
+
+#sdi_contact_left{
+    width: 20%;
+    position: absolute;
+    top:140%;
+    float: right;
+    left: 2%;
+}
+
+#sdi_contact_middle{
+    width: 20%;
+    position: absolute;
+    top:140%;
+    float: right;
+    left: 40%;
+}
+
+#sdi_contact_right{
+    width: 20%;
+    position: absolute;
+    top:140%;
+    float: right;
+    right: 2%;
+}
+
+.sdi_join{
+    position: absolute;
+    top: 125%;
+    left: 45%;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#sdi_contact_middle_bottom{
+    position: absolute;
+    top: 180%;
+}
+
+#sdi_contact_image{
+    position: absolute;
+    top: 240%;
+    width: 50%;
+    left: 1%;
+}
+
+#sdi_contact_bottom{
+    position: absolute;
+    top: 300%;
+}
+
+.contact_us{
+    position: absolute;
+    top: 230%;
+    right: 2%;
+}
+
+@media (max-width:768px){
+    .sdi_join{
+        left: 40%;
+    }
+    #sdi_contact_image{
+        top: 200%;
+    }
+    #sdi_contact_bottom{
+        top: 230%;
+    }
+    .contact_us{
+        position: absolute;
+        top: 200%;
+        right: 2%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .sdi_join{
+        left: 32%;
+    }
+    #sdi_contact_image{
+        top: 200%;
+    }
+    #sdi_contact_bottom{
+        top: 220%;
+    }
+    .contact_us{
+        position: absolute;
+        top: 200%;
+        right: 2%;
+    }
+}

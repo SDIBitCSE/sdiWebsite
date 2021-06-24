@@ -1,64 +1,69 @@
-.home_svg1{
-position: absolute;
-right: 0%;
-top: 0%;
-width: 45%;
-z-index: -1;
-}
-.sdi_navbar .home_svg1 {
+#home_svg1{
     position: absolute;
     right: 0px;
+    top: 0px;
     width: 45%;
     z-index: -1;
 }
-.sdi_home_ div{
-    margin-top: 300px;
+#sdi_home_ div{
     margin-bottom: 30px;
     font-size: 150px;
 }
 
-.sdi_home_{
-    margin-left: 180px;
-    text-align: left;
-    font-weight: 400;
-    h1{
-    font-weight: 400;
+#sdi_home_ p{
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
 
-    }
+#sdi_home_{
+    position: absolute;
+    margin-left: 10%;
+    text-align: left;
+    top: 350px;
 }
 
 .sdi_image{
-    width:50%;
+    width:45%;
     position: absolute;
     right: 0px;
     top: 250px;
+    z-index: -1;
 }
 
 @media (max-width:768px){
-    .sdi_home_ div{
+    #sdi_home_ div{
+        margin-bottom: 10px;
         font-size: 96px;
     }
-    .sdi_home_{
+    #sdi_home_{
         position: absolute;
-        top:12%;
-        margin: 0;
-        left: 5%;
-        h1{
-            position: relative;
-            left: 10%;
-        }
-        button{
-            position: relative;
-            left: 10%;
-        }
+        margin-left: 8%;
+        top: 250px;
     }
-    .sdi_image{
-        top:30%;
-        left: 70%;
-        width: 60%;
+    #sdi_home_ p{
+        font-size: 32px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: bold;
     }
-    .home_svg1{
-        top: -20%;
-        height: 90%;
+}
+
+@media only screen and (max-width: 480px) {
+    #sdi_home_ div{
+        margin-bottom: 10px;
+        font-size: 48px;
+    }
+    #sdi_home_{
+        position: absolute;
+        margin-left: 6%;
+        top: 150px;
+    }
+    #sdi_home_ p{
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: bold;
     }
 }
