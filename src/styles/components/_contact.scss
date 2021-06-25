@@ -4,81 +4,127 @@
     z-index: -1;
 }
 
-#sdi_contact_left{
+#sdi_card_left{
     width: 20%;
     position: absolute;
-    top:140%;
+    top:170%;
     float: right;
-    left: 2%;
+    left: 15%;
 }
-
-#sdi_contact_middle{
+.contactUsDiv{
+    position: inherit;
+   
+}
+#sdi_card_middle{
     width: 20%;
     position: absolute;
-    top:140%;
+    top:170%;
     float: right;
     left: 40%;
 }
 
-#sdi_contact_right{
+#sdi_card_right{
     width: 20%;
     position: absolute;
-    top:140%;
+    top:170%;
     float: right;
-    right: 2%;
+    left: 65%;
+
 }
 
 .sdi_join{
     position: absolute;
-    top: 125%;
-    left: 45%;
+    top: 140%;
+    left: 5%;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 5rem;
+    font-weight: 600;
+    color: #828282;
 }
 
 #sdi_contact_middle_bottom{
     position: absolute;
-    top: 180%;
+    top: 205%;
 }
 
 #sdi_contact_image{
     position: absolute;
-    top: 240%;
+    top: 270%;
     width: 50%;
     left: 1%;
 }
 
 #sdi_contact_bottom{
     position: absolute;
-    top: 300%;
+    top: 330%;
 }
-
-.contact_us{
+.contact_us_header{
     position: absolute;
-    top: 230%;
+    top: 240%;
     right: 2%;
+    font-size: 5rem;
+    color: #828282;
 }
 
 @media (max-width:768px){
     .sdi_join{
-        left: 40%;
+        left: 10%;
+        top:60%;
+        font-size:3rem ;
     }
+    .cardHolder{
+        display: flex;
+        flex-direction: row;
+    }
+#sdi_card_left,#sdi_card_middle,#sdi_card_right{
+    top:80%;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    left:5%;
+}
+#sdi_card_right{
+    top:105%;
+    left:5%;
+
+}
+#sdi_card_middle{
+    top:127%;
+    left:5%;
+
+}
+.sdi_card_left_svg,.sdi_card_middle_svg,.sdi_card_right_svg{
+    width: 100px;
+    height: 140px;
+}
+#sdi_contact_middle_bottom{
+    top:160%;
+
+}
     #sdi_contact_image{
-        top: 200%;
+        top: 80%;
     }
     #sdi_contact_bottom{
         top: 230%;
     }
-    .contact_us{
+    .contact_us_header{
         position: absolute;
-        top: 200%;
+        top: 170%;
         right: 2%;
+        font-size:3rem ;
+
+    }
+    #sdi_contact_image_svg{
+        position: absolute;
+        top: 180%;
+        width: 70%;
+        left: 1%;
     }
 }
 
 @media only screen and (max-width: 480px) {
     .sdi_join{
-        left: 32%;
+        left: 10%;
     }
     #sdi_contact_image{
         top: 200%;
@@ -88,7 +134,7 @@
     }
     .contact_us{
         position: absolute;
-        top: 200%;
+        top: 0%;
         right: 2%;
     }
 }

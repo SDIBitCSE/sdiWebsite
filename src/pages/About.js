@@ -1,7 +1,6 @@
 import React from 'react'
 import { Button } from 'semantic-ui-react'
 import groupSelfie from '../svgs/groupSelfie.svg'
-import Contact from '../components/Contact'
 
 function About(){
     return(
@@ -22,7 +21,6 @@ function About(){
             <Button color="teal">Know More About US</Button>
         </div>
         <img src={groupSelfie} className="sdi_image_about"  alt="" />
-        <Contact />
         </>
     )
 }

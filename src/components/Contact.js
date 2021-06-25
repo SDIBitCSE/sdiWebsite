@@ -1,36 +1,24 @@
 import React from 'react'
-import wavyTop from '../svgs/Contact/wavyTop.svg'
 import contactLeft from '../svgs/Contact/contactLeft.svg'
 import contactMiddle from '../svgs/Contact/contactMiddle.svg'
 import contactRight from '../svgs/Contact/contactRight.svg'
 import wavyMiddleBottom from '../svgs/Contact/wavyMiddleBottom.svg'
 import socialImage from '../svgs/Contact/socialImage.svg'
-import wavyBottom from '../svgs/Contact/wavyBottom.svg'
+import Card from './Card'
 function Contact(){
+    let ids =["sdi_card_left","sdi_card_middle","sdi_card_right" ]
+    let img = [contactLeft,contactMiddle,contactRight]
+    let para = ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, corporis! Distinctio maiores magnam corporis dicta vitae tenetur inventore, quaerat eveniet illum harum reprehenderit perferendis ea tempora nostrum, enim quidem possimus!"]
     return(
-        <div>
-            <img src={wavyTop} alt="" id="sdi_contact_above" />
+        <div className="contactUsDiv">
             <p className="sdi_join">Why Join SDI?</p>
-            <div>
-                <div id="sdi_contact_left"  >
-                    <img src={contactLeft} alt="" />
-                    <p>Something</p>
-                </div>
-                <div id="sdi_contact_middle" >
-                    <img src={contactMiddle} alt="" />
-                    <p>Something</p>
-                </div>
-                <div id="sdi_contact_right" >
-                    <img src={contactRight} alt="" />
-                    <p>Something</p>
-                </div>
+            <div className="cardHolder" >
+                    {ids.map((id,index)=> <Card id={id} img = {img[index]} para={para[0]}/>)}
             </div>
             <img src={wavyMiddleBottom} alt="" id="sdi_contact_middle_bottom" />
-            <div>
-                <img src={socialImage} alt="" id="sdi_contact_image" />
-                <p className="contact_us">Contact Us</p>
-                <img src={wavyBottom} alt="" id="sdi_contact_bottom" />
-            </div>
+
+            <h1 className="contact_us_header">Contact Us</h1>
+            <Card img={socialImage} id="sdi_contact_image"/>
         </div>
     )
 }

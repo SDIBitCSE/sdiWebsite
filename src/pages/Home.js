@@ -1,7 +1,8 @@
 import React from 'react'
 import { Button } from 'semantic-ui-react'
 import manAndPhone from '../svgs/manAndPhone.svg'
-
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 function Home(){
     return(
         <>
@@ -17,6 +18,8 @@ function Home(){
             <Button color="teal">Ask Question</Button>
         </div>
         <img src={manAndPhone} className="sdi_image"  alt="" />
+        <Contact/>
+        <Footer />
         </>
     )
 }
