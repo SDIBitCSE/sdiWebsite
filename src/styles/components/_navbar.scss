@@ -1,16 +1,26 @@
 .sdi_navbar{
     max-width: 100%;
     font-family:"Montserrat", sans-serif;
+    display: flex;
+    flex-direction: row;
 }
-
-.sdi_navbar_img img{
+.sdi_navbar img{
     width: 140px;
     height: 80px;
     position: relative;
-    top: 0px;
-    left: 0px;
+    top: 20%;
+    left: 10%;
 }
+.links{
+    position: relative;
+    top: -10%;
+    left: 30%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
 .sdi_name{
     font-size: 20px;
 }
@@ -21,15 +31,12 @@
     color: #666;
     text-decoration: none;
     text-align: left;
-    margin: 15px 2.5%;
-    font-size: 20px;
+    margin: 15px 2.9%;
+    font-size: 25px;
     font-family:"Montserrat", sans-serif;
     font-weight: 600;
 }
 
-#sdi_nav_last{
-    margin-right: 15%;
-}
 
 .sdi_navbar1:hover{
     background: #b91372;
@@ -55,39 +62,62 @@
     margin: 6px 0;
     transition: 0.4s;
 }
-
-@media (max-width:768px){
+@media only screen and (max-width: 480px) {
+    
+    .sdi_navbar{
+        position: fixed;
+        width: 100%;
+        top:0%;
+        align-items: center;
+        background: #7ffff2;
+        z-index: 1;
+        border-bottom-right-radius: 2em;
+        transition: all 500ms ease-in-out;
+        img{
+            z-index: 2;
+        }
+        .links{
+            z-index: -1;
+        }
+    }
+    
     .sdi_navbar1{
         display: none;
         margin-right: 4%;
     }
     .sdi_bar{
+        position: inherit;
+        right: 0;
+        top: -2%;
         display: block;
         float: right;
+        z-index: 2;
+        .sdi_navbar2{
+            position: relative;
+            z-index: 2;
+        }
     }
-    .sdi_navbar2{
-        position: relative;
-    }
-    .sdi_bar{
-        position: absolute;
-        right: 0;
-        top: 0;
+    .links {
+        margin:0;
+        position: inherit;
+        // top: -10%;
+        left: 10%;
+        top: 9.9%;
+        left: 0%;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: #7ffff2; 
+        width: 100%;
+        border-bottom-right-radius: 2em;
     }
     .sdi_navbar2 .sdi_navbar1{
         float: none;
         display: block;
         text-align: right;
-    }
-    #sdi_nav_last{
-        margin-right: 4%;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    #sdi_nav_last{
-        margin-right: 8%;
-    }
-    .sdi_navbar1{
-        margin-right: 8%;
+        z-index: 3;
+        
     }
 }

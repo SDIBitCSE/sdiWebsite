@@ -1,69 +1,64 @@
-#home_svg1{
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    width: 45%;
-    z-index: -1;
-}
-#sdi_home_ div{
-    margin-bottom: 30px;
-    font-size: 150px;
-}
-
-#sdi_home_ p{
-    font-size: 32px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-#sdi_home_{
-    position: absolute;
-    margin-left: 10%;
-    text-align: left;
-    top: 350px;
-}
-
-.sdi_image{
-    width:45%;
-    position: absolute;
-    right: 0px;
-    top: 250px;
-    z-index: -1;
-}
-
-@media (max-width:768px){
-    #sdi_home_ div{
-        margin-bottom: 10px;
-        font-size: 96px;
+.homeDiv{
+    height: 100vh;
+    width: 100vw;
+    #home_svg1{
+        position: relative;
+        right: -55%;
+        top: -11%;
+        width: 45%;
+        z-index: -1;
     }
     #sdi_home_{
-        position: absolute;
-        margin-left: 8%;
-        top: 250px;
+        position: relative;
+        margin-left: 10%;
+        text-align: left;
+        top:-130%;
+        div{
+            margin-bottom: 30px;
+            font-size: 150px;
+        }
+        p{
+            font-size: 32px;
+            margin-top: 5%;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
     }
-    #sdi_home_ p{
-        font-size: 32px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-weight: bold;
+    .sdi_image{
+        width:45%;
+        position: absolute;
+        left: 50%;
+        top: -105%;
+        z-index: 1;
     }
 }
-
 @media only screen and (max-width: 480px) {
-    #sdi_home_ div{
-        margin-bottom: 10px;
-        font-size: 48px;
-    }
-    #sdi_home_{
-        position: absolute;
-        margin-left: 6%;
-        top: 150px;
-    }
-    #sdi_home_ p{
-        font-size: 16px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-weight: bold;
+    .homeDiv{
+        top: 15%;
+
+        #home_svg1{
+            top: 5%;
+        }
+        #sdi_home_ {
+            position: relative;
+            margin-left: 6%;
+            top: -32%;
+            z-index: -1;
+            div{
+            margin-bottom: 10px;
+            font-size: 48px;
+        }
+            p{
+            font-size: 16px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            }
+            .sdi_image{
+                top:-30%;
+                left:45%;
+                width:65%;
+            }
+        }        
     }
 }

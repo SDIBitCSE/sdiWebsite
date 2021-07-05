@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function Card({img,id,para}) {
 	return (
-		<div id={id}>
+		<div className = "card">
                     <img src={img} className={`${id}_svg`} alt="" />
-				<p>{para}</p>
+				<p >{para}</p>
 		</div>
 	)
 }
