@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import sdiHomeLogo from '../svgs/sdiHomeLogo.svg'
 
 function Navbar(){
@@ -19,7 +19,7 @@ function Navbar(){
                     <div className="sdi_bar2"></div>
                     <div className="sdi_bar3"></div>
                 </div>
-                <Link to="/" className="sdi_navbar"><img src={sdiHomeLogo} alt="img"/></Link>
+                <a href="/" ><img src={sdiHomeLogo} className="sdi_logo" alt="img"/></a>
                 <div className="links">
                 {username != null && <NavLink to="/logout" activeClassName="is-active" className="sdi_navbar1">Logout</NavLink> }
                 <NavLink to="/" exact activeClassName="is-active" className="sdi_navbar1">Home</NavLink>

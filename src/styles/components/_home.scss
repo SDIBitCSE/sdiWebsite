@@ -1,52 +1,85 @@
+#root{
+    overflow-x: hidden;
+}
 .homeDiv{
-    height: 100vh;
-    width: 100vw;
-    #home_svg1{
-        position: relative;
-        right: -55%;
-        top: -11%;
-        width: 45%;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .hps{
+        position: absolute;
+        width: 70%;
+        height:170%;
+        top:0;
+        right: -20%;
         z-index: -1;
-    }
+
+    }   
     #sdi_home_{
         position: relative;
-        margin-left: 10%;
+        margin-left: 20%;
         text-align: left;
-        top:-130%;
-        div{
+        top:20%;
+        h1{
             margin-bottom: 30px;
-            font-size: 150px;
+            font-size: 6em;
         }
         p{
             font-size: 32px;
             margin-top: 5%;
-            margin-bottom: 10px;
+            margin-bottom: 2%;
             font-weight: bold;
         }
     }
-    .sdi_image{
+    .manAndPhone{
         width:45%;
         position: absolute;
-        left: 50%;
-        top: -105%;
+        left: 30%;
+        top: 10%;
         z-index: 1;
     }
+}
+    footer{
+    margin-top: 1vh;
+    display: flex;
+    .header{
+        height: 10vh;
+        position: relative;
+        top:10%;
+        .contact_us_header{
+            position: relative;
+            top: 70%;
+            left: 90%;
+            font-size: 2rem;
+            color: #828282;
+            z-index: 1;
+        }
+    }
+    img{
+        position: relative;
+        left: -20%;
+        height: 55vh;
+    }
+	
 }
 @media only screen and (max-width: 480px) {
     .homeDiv{
         top: 15%;
-
-        #home_svg1{
-            top: 5%;
+        .hps{
+            top:5%;
+            height: 80%;
+            width: 60%;
         }
         #sdi_home_ {
             position: relative;
             margin-left: 6%;
-            top: -32%;
+            top: 30%;
             z-index: -1;
-            div{
+
+            h1{
             margin-bottom: 10px;
-            font-size: 48px;
+            font-size: 2.5em;
         }
             p{
             font-size: 16px;
@@ -54,11 +87,13 @@
             margin-bottom: 10px;
             font-weight: bold;
             }
-            .sdi_image{
-                top:-30%;
+            .manAndPhone{
+                top:10%;
                 left:45%;
-                width:65%;
+                width:55%;
             }
         }        
+        
     }
+
 }

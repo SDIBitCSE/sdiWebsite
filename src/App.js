@@ -8,6 +8,7 @@ import Navbar from './components/Navbar'
 import About from './pages/About'
 import Blogs from './pages/Blogs'
 import NotFound from './pages/NotFound'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route component={NotFound} />
           </Switch>
       </Router>
+      {/* <Footer/> */}
     </>
   );
 }
