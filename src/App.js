@@ -9,6 +9,8 @@ import About from './pages/About'
 import Blogs from './pages/Blogs'
 import NotFound from './pages/NotFound'
 import Footer from './components/Footer'
+import Login from './pages/Login'
+import Signup from './components/Signup'
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
             <Route exact path='/' component={Home} />
             <Route exact path='/about' component={About} />
             <Route exact path='/blogs' component={Blogs} />
+            <Route exact path='/login' component={Login} />
+            <Route exact path='/signup' component={Signup} />
             <Route component={NotFound} />
           </Switch>
       </Router>
