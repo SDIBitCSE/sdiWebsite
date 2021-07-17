@@ -24,7 +24,8 @@ function Navbar(){
                 {username != null && <NavLink to="/logout" activeClassName="is-active" className="sdi_navbar1">Logout</NavLink> }
                 <NavLink to="/" exact activeClassName="is-active" className="sdi_navbar1">Home</NavLink>
                 <NavLink to="/about" activeClassName="is-active" className="sdi_navbar1">About</NavLink>
-                <NavLink to="/blogs" id="sdi_nav_last" activeClassName="is-active" className="sdi_navbar1">Blogs</NavLink>
+                <NavLink to="/landingPage" activeClassName="is-active" className="sdi_navbar1">LandingPage </NavLink>
+                {/* <NavLink to="/login" id="sdi_nav_last" activeClassName="is-active" className="sdi_navbar1">Login</NavLink> */}
                 </div>
             </div>
     )

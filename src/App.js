@@ -6,11 +6,10 @@ import './styles/styles.scss'
 import Home from './pages/Home'
 import Navbar from './components/Navbar'
 import About from './pages/About'
-import Blogs from './pages/Blogs'
+// import Blogs from './pages/Blogs'
 import NotFound from './pages/NotFound'
-import Footer from './components/Footer'
-import Login from './pages/Login'
-import Signup from './components/Signup'
+
+import LP from './components/LandingPage'
 
 function App() {
   return (
@@ -20,9 +19,7 @@ function App() {
           <Switch>
             <Route exact path='/' component={Home} />
             <Route exact path='/about' component={About} />
-            <Route exact path='/blogs' component={Blogs} />
-            <Route exact path='/login' component={Login} />
-            <Route exact path='/signup' component={Signup} />
+            <Route exact path='/landingPage' component={LP} />
             <Route component={NotFound} />
           </Switch>
       </Router>

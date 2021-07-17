@@ -72,7 +72,6 @@
         align-items: center;
         background: #7ffff2;
         margin: 0%;
-
         z-index: 1;
         a{
             .sdi_logo{
@@ -83,13 +82,12 @@
             }
         }
         .links{
-            z-index: -1;
             transition: all 200ms ease-in-out;
             margin:0;
             position: inherit;
             top: 13%;
             left: 0%;
-            z-index: 2;
+            z-index: -2;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -97,6 +95,7 @@
             background: #7ffff2; 
             width: 100%;
             opacity: 0;
+            display: none;
             border-bottom-right-radius: 2em;
 
         }
@@ -131,6 +130,8 @@
         }
         .links{
             opacity: 1;
+            z-index: 2;
+            display: flex;
         }
     }
 }
