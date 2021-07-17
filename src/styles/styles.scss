@@ -3,10 +3,13 @@
 @import './components/about';
 @import './components/contact';
 @import './components/footer';
+@import './components/SubjectHolder';
 
-body,html,h1,root{
+body,html,h1,#root{
 	font-family: 'Montserrat', sans-serif;
 	margin: 0;
+	padding: 0%;
+	box-sizing: border-box;
 	min-height: 100%;
 }
 body{
