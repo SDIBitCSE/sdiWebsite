@@ -1,8 +1,9 @@
 import axios from 'axios';
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom';
 import { Form, Button } from 'semantic-ui-react'
 import { useForm } from '../utils/hooks'
+import { AuthContext } from '../context/context'
 
 const Login = () =>{
     const {onChange, onSubmit, value} = useForm(loginUserCallback,{
@@ -10,9 +11,15 @@ const Login = () =>{
         password: ''
     })
 
+    const context = useContext(AuthContext)
+
     const loginUser = async () =>{
-        const res = await axios.get('https://graph.resnal.ml:2019/api/students/login/', value)
-        console.log(res)
+        const res = await axios.get('https://www.boredapi.com/api/activity', {
+            headers:{
+                value
+            }
+        });
+        context.login(res.data)
     }
     function loginUserCallback(){
         loginUser()

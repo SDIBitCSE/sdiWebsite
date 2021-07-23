@@ -1,16 +1,23 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Form, Button } from 'semantic-ui-react'
 import { useForm } from '../utils/hooks'
+import { AuthContext } from '../context/context'
+import axios from 'axios'
 
 const Signup = () =>{
+    const context = useContext(AuthContext)
     const {onChange, onSubmit, value} = useForm(signupUserCallback,{
         username: '',
         password: '',
         consfirmPassword: ''
     })
 
-    const signupUser = () =>{
-        console.log('signup')
+    const signupUser = async () =>{
+        const res = await axios.post('https://httpbin.org/post', {
+            value
+        });
+        console.log(res)
+        context.login(res.data)
     }
 
     function signupUserCallback(){

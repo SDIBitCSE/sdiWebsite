@@ -1,8 +1,14 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, {useContext} from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import sdiHomeLogo from '../svgs/sdiHomeLogo.svg'
+import { AuthContext } from '../context/context';
 
 function Navbar(){
+    const {user, logout} = useContext(AuthContext)
+
+    const handleLogout = () =>{
+        logout()
+    }
     var username = JSON.parse(localStorage.getItem('userdata'));
     const handleSideBar = () =>{
         let x = document.getElementById("sdi_nav");
@@ -24,7 +30,14 @@ function Navbar(){
                 {username != null && <NavLink to="/logout" activeClassName="is-active" className="sdi_navbar1">Logout</NavLink> }
                 <NavLink to="/" exact activeClassName="is-active" className="sdi_navbar1">Home</NavLink>
                 <NavLink to="/about" activeClassName="is-active" className="sdi_navbar1">About</NavLink>
-                <NavLink to="/landingPage" activeClassName="is-active" className="sdi_navbar1">LandingPage </NavLink>
+                <NavLink to="/landingPage" activeClassName="is-active" className="sdi_navbar1">Notes </NavLink>
+                {
+                    user ? (
+                        <Link onClick={handleLogout} to="/" activeClassName="is-active" className="sdi_navbar1">Logout </Link>
+                    ) : (
+                        <NavLink to="/login" activeClassName="is-active" className="sdi_navbar1">Login </NavLink>
+                    )
+                }
                 {/* <NavLink to="/login" id="sdi_nav_last" activeClassName="is-active" className="sdi_navbar1">Login</NavLink> */}
                 </div>
             </div>
